@@ -1,0 +1,19 @@
+* Yet another patch panel
+** Because the ones I want to use
+   aren't available for vanilla ubuntu
+** Because the ones that are available
+   for vanilla ubuntu are useless.
+* Basics
+** Manage Jack and Pulse clients and connections
+** Start programs or components with a PATH lookup
+   or with explicit paths to executables
+** Notice their available ports
+** Notice any auto connections they do
+** Assume that auto connections to system sources
+   and sinks are hints about where the inputs and
+   outputs of the program/component should be.
+** Allow the connections to be memoized
+** Draw nice boxes with splined wires connecting
+   outputs to inputs.
+** Allow the programs to rewire, mark a connection as volatile
+* Pajaro 

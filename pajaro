@@ -1,0 +1,28 @@
+#!/usr/bin/wish
+
+namespace eval ::pa {}
+
+proc pa-record {type index name args} {
+    puts "pa-record $type $index $name $args"
+    set idict [dict create name $name]
+    if {$args ne {}} {
+	switch $type {
+	    default { error "in pa-record no args hander for $type for args {$args}" }
+	}
+    }
+    return $idict
+}
+
+proc pa-list {} {
+    set dict [dict create]
+    foreach type {modules sinks sources sink-inputs source-outputs clients samples cards} {
+	set tdict [dict create]
+	foreach {line} [split [string trim [exec pactl list short $type]] \n] {
+	    puts "record $line"
+	    set pa-record $type {*}$line
+	}
+	dict set dict $type $tdict
+    }
+}
+
+pa-list

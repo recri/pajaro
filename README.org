@@ -1,0 +1,4 @@
+* Pajaro - Pulse Audio Jack Audio Rack Organizer
+  You run programs that speak and hear audio data on Linux.
+  Lots of programs understand how speak and hear Pulse Audio.
+  But you need some Jack Audio to be happy.

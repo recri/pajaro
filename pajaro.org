@@ -1,0 +1,3 @@
+* Pajaro - PulseAudioJackAudioRackOrganizer
+  You run programs that speak and hear audio data on Linux.
+  Lots of programs understand how speak and hear Pulse Audio.
